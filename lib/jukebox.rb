@@ -20,8 +20,7 @@ end
 
 def find_song(choice,songs)
   songs.each_with_index do |song,index|
-    song_num = (index + 1).to_s
-    puts song_num + ". " + song
+    if index = choice - 1 
 
 def play(songs)
   puts "Please enter a song name or number:"

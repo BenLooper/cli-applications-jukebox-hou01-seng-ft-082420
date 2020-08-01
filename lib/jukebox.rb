@@ -20,7 +20,11 @@ end
 
 def find_song(choice,songs)
   songs.each_with_index do |song,index|
-    if index = choice - 1 
+    if index == (choice - 1)
+      return song 
+    end 
+  end 
+end 
 
 def play(songs)
   puts "Please enter a song name or number:"

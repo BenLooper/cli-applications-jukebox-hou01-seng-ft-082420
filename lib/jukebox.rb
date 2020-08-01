@@ -22,3 +22,24 @@ def play(songs)
   puts "Please enter a song name or numer:"
   choice = gets.strip
   if choice.between?(1,9)
+    puts "Playing #{choice}"
+  else 
+    puts "Invalid input, please try again"
+  end 
+end 
+
+def exit_jukebox
+  puts "Goodbye"
+end 
+
+def run(songs)
+  puts "Please enter a command:"
+  command = gets.strip
+  
+  
+  
+    
+    
+    
+    
+    

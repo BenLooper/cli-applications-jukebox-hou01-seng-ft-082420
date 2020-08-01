@@ -1,4 +1,5 @@
 # Add your code here
+require 'pry'
 def say_hello(name)
   "Hi #{name}"
 end 
@@ -29,6 +30,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   choice = gets.strip.to_i
+  binding.pry
   if choice.between?(1,9)
     selected = find_song(choice,songs)
     puts "Playing #{selected}"

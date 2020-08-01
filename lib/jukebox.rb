@@ -9,3 +9,7 @@ def help
   puts "- list : displays a list of songs you can play"
   puts "- play : lets you chooe a song to play"
   puts "- exit : exits this program"
+end 
+
+def list(songs)
+  

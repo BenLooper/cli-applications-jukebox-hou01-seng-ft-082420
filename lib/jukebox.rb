@@ -35,19 +35,19 @@ end
 
 def run(songs)
   while true 
-  puts "Please enter a command:"
-  command = gets.strip
-  action = case command 
-    when 'help'
-      help
-    when 'list'
-      list(songs)
-    when 'play'
-      play(songs)
-    when 'exit'
-      exit_jukebox
-    end 
-  
+    puts "Please enter a command:"
+    command = gets.strip
+    action = case command 
+      when 'help'
+        help
+      when 'list'
+        list(songs)
+      when 'play'
+        play(songs)
+      when 'exit'
+        exit_jukebox
+      end 
+    
   
     
     

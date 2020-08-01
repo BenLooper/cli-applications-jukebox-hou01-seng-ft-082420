@@ -30,7 +30,8 @@ def play(songs)
   puts "Please enter a song name or number:"
   choice = gets.strip.to_i
   if choice.between?(1,9)
-    puts "Playing #{choice}"
+    selected = find_song(choice,songs)
+    puts "Playing #{selected}"
   else 
     puts "Invalid input, please try again"
   end 

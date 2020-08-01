@@ -17,4 +17,8 @@ def list(songs)
     puts song_num + ". " + song
   end 
 end 
-  
+
+def play(songs)
+  puts "Please enter a song name or numer:"
+  choice = gets.strip
+  if

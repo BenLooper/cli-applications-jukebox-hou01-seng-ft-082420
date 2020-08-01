@@ -20,7 +20,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or numer:"
-  choice = gets.strip
+  choice = gets.strip.to_i
   if choice.between?(1,9)
     puts "Playing #{choice}"
   else 

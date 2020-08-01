@@ -12,8 +12,9 @@ def help
 end 
 
 def list(songs)
-  songs.each do |song|
-    puts "1. #{song}"
+  songs.each_with_index do |song|
+    song_num = (song.index + 1).to_s
+    puts song_num + ". " + song
   end 
 end 
   

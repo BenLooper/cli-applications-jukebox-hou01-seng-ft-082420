@@ -21,4 +21,4 @@ end
 def play(songs)
   puts "Please enter a song name or numer:"
   choice = gets.strip
-  if
+  if choice.between?()
